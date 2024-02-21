@@ -1,0 +1,20 @@
+<div class="header">
+    <h1>Employee Registeration</h1>
+</div>
+<app-employee-form></app-employee-form>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Postion</th>
+        <th>Location</th>
+        <th>Salary</th>
+        <th>Operation</th>
+    </tr>
+    <tr *ngFor="let emp of service.list">
+        <td>{{emp.fullName}}</td>
+        <td>{{emp.position}}</td>
+        <td>{{emp.location}}</td>
+        <td>{{emp.salary}}</td>
+        <td><button (click)="onDelete(emp._id)">❌</button><button (click)="populateForm(emp)">✍🏻</button></td>
+    </tr>
+</table>

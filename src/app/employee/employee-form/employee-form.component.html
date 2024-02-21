@@ -1,0 +1,20 @@
+<div class="container">
+    <form [formGroup]="service.employeeForm" (submit)="onSubmit()" [class.submitted]='submitted'>
+
+        <label>Full Name</label>
+        <input type="text" formControlName="fullName" placeholder="Your Full Name..">
+
+
+        <label>Postion</label>
+        <input type="text" formControlName="position" placeholder="Your Postion..">
+
+        <label>Location</label>
+        <input type="text" formControlName="location" placeholder="Your Location..">
+
+        <label>Salary</label>
+        <input type="number" formControlName="salary" placeholder="Your Salary..">
+
+        <button type="submit">Submit</button>
+
+    </form>
+</div>

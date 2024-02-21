@@ -1,0 +1,30 @@
+.header {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 10px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+button {
+    margin: 4px;
+}
